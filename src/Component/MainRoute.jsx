@@ -6,7 +6,7 @@ import Products from './Products'
 const MainRoute = () => {
   return (
     <div>
-        <Products/>
+        
         <Routes>
             <Route path="/" element={<Products/>}/>
             <Route path="/details/:id" element={<ProductDetails/>}/>

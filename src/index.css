@@ -11,3 +11,172 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.searchDiv{
+  width: 40%;
+  height: 70px;
+  margin-left: auto;
+  margin-right: 20%;
+  margin-top: 5%;
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: space-around;
+}
+input{
+  width: 70%;
+  height: 40px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  outline: none;
+}
+.searchIconDiv{
+  width: 47px;
+  height: 40px;
+  margin-right: auto;
+  margin-left: 5px;
+  /* border: 1px solid red; */
+  background-color: #979292;
+  text-align: center;
+  padding-top: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+ 
+}
+.searchIconDiv>i{
+  color: white;
+   font-weight: 100;
+}
+
+.contentDiv{
+  width: 80%;
+  height: 600px;
+  /* border: 1px solid red; */
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.contentDiv >.filter_div{
+  width: 30%;
+  height: 70%;
+  /* border: 1px solid blue; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.checkBoxDiv{
+  width: 100%;
+  height: auto;
+  /* margin-left: -30px; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* border: 1px solid yellow; */
+  /* padding: 10px; */
+}
+.checkBoxDiv > .check_box{
+  width: 80%;
+  text-align: center;
+  /* border: 1px solid blue; */
+  position: relative;
+  margin-bottom: 7px;
+}
+.checkBoxDiv>h4{
+  font-family: sans-serif;
+  font-size: 19px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+.check_box > label{
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 5px;
+ position: absolute;
+}
+.check_box > input{
+  width: 15px;
+  height: 15px;
+  margin-left: -85px;
+  background-color: #979292;
+  cursor: pointer;
+}
+
+.contentDiv > .product_list_div{
+  width: 70%;
+  height: 100%;
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   grid-gap: 10px;
+   padding: 10px;
+  /* border: 1px solid green; */
+  overflow: auto;
+  
+}
+.product_card{
+  width: 220px;
+  height: 215px;
+  /* border: 1px solid orange; */
+  position: relative;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.images{
+  width: 100px;
+  height: 100px;
+  margin-top: 2.5rem;
+}
+.product_title{
+  font-size: 0.7rem;
+  margin-bottom: 1rem;
+}
+.product_card > .item_details{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.product_card > .product_title{
+  position: absolute;
+  left: 5%;
+  font-family: sans-serif;
+  top: 2%;
+  color: #08345b;
+}
+.item_details > button{
+  width: 40%;
+  height: 30px;
+  border: none;
+  background-color: green;
+  color: white;
+  /* margin-top: -5px; */
+  margin-top: 1rem;
+  
+  cursor: pointer;
+}
+.item_details > p{
+  font-weight: bold;
+}
+@media only screen and (min-width: 70px) and (max-width: 420px) {
+  .contentDiv > .product_list_div{
+    width: 70%;
+    height: 100%;
+     display: grid;
+     grid-template-columns: repeat(1,1fr);
+     grid-gap: 10px;
+     padding: 10px;
+    /* border: 1px solid green; */
+    overflow: auto;
+    
+  }
+
+}
+
+@media only screen and (min-width: 421px) and (max-width: 780px) {
+  .contentDiv > .product_list_div{
+    width: 70%;
+    height: 100%;
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     grid-gap: 10px;
+     padding: 10px;
+    /* border: 1px solid green; */
+    overflow: auto;
+    
+  }
+
+}
